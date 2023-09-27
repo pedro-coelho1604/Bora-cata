@@ -29,7 +29,7 @@ header {
     height: auto;
     width: 100vw;
     background-size: 100% auto;
-    background-color: var(--amarelo);
+    background-color: var(--azul-escuro);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ header nav ul a {
     padding: 1rem;
     font-weight: 800;
     font-size: 2rem;
-    color: var(--azul-escuro);
+    color: var(--branco);
 }
 
 header nav ul a:hover {
@@ -60,8 +60,9 @@ header nav ul a:hover {
 main {
     /* background-color: var(--branco); */
     background: url(assets/image/tela\ menu\ inicial.png) no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: top;
+    height: 100vh;
 }
 
 .card {
@@ -70,7 +71,7 @@ main {
     border-radius: 15px;
     position: absolute;
     right: 50px;
-    top: 280px;
+    top: 410px;
     padding: 2rem;
     box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.5);
 }
