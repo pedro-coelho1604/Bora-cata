@@ -1,8 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+:root {
+    --branco: #FFFADD;
+    --azul-claro: #8ECDDD;
+    --amarelo: #FFCC70;
+    --azul-escuro: #22668D;
+    --verde-musgo: #6F7351;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lilita One', cursive;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    /* background: url(assets/image/tela\ menu\ inicial.png) no-repeat; */
+    position: relative;
+    height: auto;
+    width: 100vw;
+    background-size: 100% auto;
+    background-color: var(--amarelo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul a {
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--azul-escuro);
+}
+
+header nav ul a:hover {
+    text-decoration: underline
+}
+
+main {
+    /* background-color: var(--branco); */
+    background: url(assets/image/tela\ menu\ inicial.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.card {
+    background: var(--branco);
+    width: 450px;
+    border-radius: 15px;
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    padding: 2rem;
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card-titulo {
+    font-size: 40px;
+    color: #016A70;
+}
+
+.card-texto {
+    color: #016A70;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.linha-sobre {
+    width: 100px;
+    height: 6px;
+    background-color: var(--amarelo);
+    border-radius: 4px;
+    margin-bottom: 1rem;
 }
