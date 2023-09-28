@@ -45,10 +45,12 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header-nav-item {
     list-style: none;
+    margin-right: 1rem;
 }
 
 .header-nav-item a {
@@ -85,6 +87,10 @@ main img {
     height: auto;
 }
 
+.img-mob {
+    display: none;
+}
+
 .resumo {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(25px);
@@ -115,17 +121,20 @@ main img {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem 10%;
-    width: 100%;
+    margin: 1rem 10%;
+    width: 80%;
 }
 
 .sobre img {
     width: 47%;
+    min-width: 500px;
 }
 
 .sobre-texto {
     width: 47%;
+    min-width: 500px;
 }
 
 .sobre h2 {
@@ -301,12 +310,24 @@ main img {
 
 .contato input, .contato select {
     width: 100%;
-    height: 30px;
     border-radius: 10px;
     border: none;
     margin-top: .25rem;
     margin-bottom: 1rem;
     padding-left: .5rem;
+}
+
+.input-padrão {
+    height: 30px;
+}
+
+.mensagem {
+    height: 90px;
+}
+
+.mensagem::placeholder {
+    position: relative;
+    top: -30px;
 }
 
 input::placeholder {
@@ -369,4 +390,97 @@ footer {
     font-family: 'Barlow', sans-serif;
     text-align: center;
     padding: 1rem 0 2rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Responsividade da Imagem inicial */
+    .img-desk {
+        display: none;
+    }
+
+    .img-mob {
+        display: block;
+    }
+    
+    /* Responsividadae do Resumo */
+    .resumo {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: -2rem auto 2rem auto;
+        width: 80%;
+    }
+
+    .resumo h1, .resumo p {
+        color: black;
+        text-align: justify;
+    }
+
+    /* Resposividade do Sobre */
+    .sobre {
+        flex-direction: column;
+    }
+
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-texto {
+        width: 80%;
+        min-width: 0px;
+        height: auto;
+        text-align: justify;
+    }
+
+    .sobre img {
+        width: 80%;
+        min-width: 0px;
+    }
+
+    /* Responsividade do Como jogar */
+    .como-jogar {
+        width: 80%;
+    }
+
+    /* Responsividade do Materiais */
+    .materiais {
+        flex-direction: column;
+    }
+
+    .materiais-texto {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .materiais-img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    /* Responsividade Relato */
+    .relatos {
+        flex-direction: column;
+    }
+
+    .relato {
+        min-width: 280px;
+    }
+
+    /* Responsividade do Contato */
+    #contato {
+       min-width: 425px;
+    }
+}
+
+/* Utilitários */
+.mb-2 {
+    margin-bottom: 2rem;
 }
