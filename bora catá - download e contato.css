@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,900&display=swap');
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+/* Resetando estilos dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor do bacground da página */
+body {
+    background-color: blanchedalmond;
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    padding: .5rem 2rem;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .14);
+    position: fixed;
+    width: 96%;
+    z-index: 9;
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+}
+
+.header-nav {
+    width: 30%;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-nav-item {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.header-nav-item a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+.header-nav-item a:hover {
+    color: black;
+}
+
+.header-download {
+    text-decoration: none;
+    color: white;
+    background: rgb(255, 153, 0);
+    padding: .5rem .75rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+}
+
+.header-download:hover {
+    transition: .5s;
+    color: black;
+    background: rgb(255, 102, 0);
+}
+
+/* Estilização da main */
+main img {
+    width: 100%;
+    height: auto;
+}
+
+.img-mob {
+    display: none;
+}
+
+/* Estilização do Bora Catá */
+.bora-cata {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 10%;
+    width: 80%;
+}
+
+.bora-cata img {
+    width: 47%;
+    min-width: 500px;
+}
+
+.bora-cata-texto {
+    width: 47%;
+    min-width: 500px;
+}
+
+.bora-cata-texto a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bora-cata h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.bora-cata p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.bora-cata p span {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+}
+
+/* Estilização do Como Instalar */
+.como-instalar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 10%;
+    width: 80%;
+}
+
+.como-instalar img {
+    width: 47%;
+    min-width: 500px;
+}
+
+.como-instalar h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.como-instalar p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.como-instalar p span {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+}
+
+/* Estilização do Contato */
+#contato {
+    width: 40%;
+    margin: 2rem auto;
+    padding: 1rem 2rem 4rem 2rem;
+    border-radius: 2rem;
+    background: #4b58a4;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .2);
+    color: white;
+}
+
+.contato {
+    width: 80%;
+    margin: 3rem auto 0 auto;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+.obrigatorio {
+    text-align: end;
+    font-size: 12px;
+}
+
+.contato input, .contato select {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+}
+
+.input-padrão {
+    height: 30px;
+}
+
+.mensagem {
+    height: 90px;
+}
+
+.mensagem::placeholder {
+    position: relative;
+    top: -30px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.contato button {
+    margin-top: 2rem;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .14);
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+}
+
+.contato button:hover {
+    transition: .5s;
+    background: rgb(255, 102, 0);
+}
+
+/* Estilização do footer */
+footer {
+    background: #262e5a;
+    display: block;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-logo {
+    width: 30%;
+    height: auto;
+    flex-grow: 1;
+}
+
+.footer-nav {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav li {
+    margin: 1rem 0;
+}
+
+.footer-nav a {
+    margin-top: 2rem;
+}
+
+.cr {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Responsividade da Imagem inicial */
+    .img-desk {
+        display: none;
+    }
+
+    .img-mob {
+        display: block;
+    }
+
+    /* Resposividade do Bora Catá */
+    .bora-cata {
+        flex-direction: column;
+    }
+
+    .bora-cata-texto {
+        width: 80%;
+        min-width: 0px;
+        height: auto;
+        text-align: justify;
+    }
+
+    .bora-cata-texto a {
+        text-align: center;
+    }
+
+    .bora-cata img {
+        width: 80%;
+        min-width: 0px;
+    }
+
+    /* Responsividade do Como Instalar */
+    .como-instalar {
+        width: 80%;
+    }
+
+    /* Responsividade do Contato */
+    #contato {
+       min-width: 425px;
+    }
+}
