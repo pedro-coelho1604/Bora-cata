@@ -392,6 +392,13 @@ footer {
     padding: 1rem 0 2rem 0;
 }
 
+@media screen and (max-width: 1725px) {
+    .header-nav ul {
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     /* Responsividade da Imagem inicial */
     .img-desk {
