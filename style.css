@@ -99,7 +99,7 @@ header {
 }
 
 .nav {
-    visibility: hidden;
+    display: none;
     width: 0;
     height: 0;
     position: fixed;
@@ -143,7 +143,7 @@ header {
 }
 
 #opcoes:checked ~ .nav {
-    visibility: visible;
+    display: block;
     width: 90%;
     height: auto;
 }
