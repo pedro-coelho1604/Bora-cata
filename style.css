@@ -9,6 +9,14 @@ font-family: 'Fraunces', serif; */
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* Cor do bacground da página */
 body {
     background-color: blanchedalmond;
@@ -79,6 +87,65 @@ header {
     transition: .5s;
     color: black;
     background: rgb(255, 102, 0);
+}
+
+/* Menu Hamburguer */
+.menu-ham {
+    display: none;
+}
+
+.icone-menu {
+    display: none;
+}
+
+.nav {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: fixed;
+    background: #4b58a4;
+    border-radius: 25px;
+    padding: 0 1rem 2rem 1rem;
+    top: 86px;
+    left: 5%;
+    text-align: center;
+}
+
+.nav li {
+    margin: 2rem;
+}
+
+.nav-item a {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+.nav-item a:hover {
+    color: black;
+}
+
+.jogar {
+    text-decoration: none;
+    color: white;
+    background: rgb(255, 153, 0);
+    padding: .5rem .75rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+}
+
+.jogar:hover {
+    transition: .5s;
+    color: black;
+    background: rgb(255, 102, 0);
+}
+
+#opcoes:checked ~ .nav {
+    visibility: visible;
+    width: 90%;
+    height: auto;
 }
 
 /* Estilização do Resumo */
@@ -161,8 +228,7 @@ main img {
     border-radius: 2rem;
     background: #4b58a4;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, .2);
-    margin: .5rem auto;
-    margin-top: 4rem;
+    margin: 4rem auto .5rem auto;
 }
 
 .como-jogar h2 {
@@ -394,63 +460,10 @@ footer {
 }
 
 
-@media screen and (max-width: 1725px) {
-    .header-nav ul {
-        justify-content: space-around;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    /* Responsividade da Imagem inicial */
-    .img-desk {
-        display: none;
-    }
-
-    .img-mob {
-        display: block;
-    }
-    
-    /* Responsividadae do Resumo */
-    .resumo {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin: -2rem auto 2rem auto;
-        width: 80%;
-    }
-
-    .resumo h1, .resumo p {
-        color: black;
-        text-align: justify;
-    }
-
-    /* Resposividade do Sobre */
-    .sobre {
-        flex-direction: column;
-    }
-
-    .column-reverse {
-        flex-direction: column-reverse;
-    }
-
-    .sobre-texto {
-        width: 80%;
-        min-width: 0px;
-        height: auto;
-        text-align: justify;
-    }
-
-    .sobre img {
-        width: 80%;
-        min-width: 0px;
-    }
-
-    /* Responsividade do Como jogar */
-    .como-jogar {
-        width: 80%;
-    }
-
+/* --------------------------------------- */
+/* -------------RESPONSIVIDADE------------ */
+/* --------------------------------------- */
+@media screen and (max-width: 1898px) {
     /* Responsividade do Materiais */
     .materiais {
         flex-direction: column;
@@ -466,12 +479,84 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
+    }
+
+    .materiais-img img {
+        max-width: 50%;
     }
 
     .justify-center {
         justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1725px) {
+    /* Responsividade da barra de navegação */
+    .header-nav ul {
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1565px) {
+    /* Responsividade da Imagem inicial */
+    .img-desk {
+        display: none;
+    }
+
+    .img-mob {
+        display: block;
+    }
+
+    /* Responsividadae do Resumo */
+    .resumo {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: -2rem auto 2rem auto;
+        width: 939px;
+    }
+
+    .resumo h1, .resumo p {
+        color: black;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+     /* Resposividade do Sobre */
+     .sobre {
+        flex-direction: column;
+    }
+
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-texto {
+        width: 80%;
+        min-width: 0px;
+        height: auto;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .resumo {
+        width: 80%;
+    }
+
+    .sobre img {
+        width: 80%;
+        min-width: 0px;
+    }
+
+    /* Responsividade do Como jogar */
+    .como-jogar {
+        width: 80%;
     }
 
     /* Responsividade Relato */
@@ -489,7 +574,37 @@ footer {
     }
 }
 
-/* Utilitários */
+@media screen and (max-width: 763px) {
+    .header-nav {
+        display: none;
+    }
+    
+    .header-jogar {
+        display: none;
+    }
+
+    .icone-menu {
+        display: block;
+        width: 35px;
+        height: 35px;
+        background: url('./assets/imagens/icone-menu-hamburguer.png') no-repeat;
+        background-size: 100%;
+    }
+
+    .icone-menu:hover {
+        background: url('./assets/imagens/icone-menu-hamburguer-preto.png') no-repeat;
+        background-size: 100%;
+    }
+}
+
+/* --------------------------------------- */
+/* --------------Utilitários-------------- */
+/* --------------------------------------- */
 .mb-2 {
     margin-bottom: 2rem;
+}
+
+/* Sempre visivel */
+.sv {
+    display: block;
 }
