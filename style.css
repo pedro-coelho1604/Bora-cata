@@ -597,6 +597,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .resumo p, .sobre p, .como-jogar p, .materiais-texto p {
+        font-size: 16px;
+    }
+}
+
 /* --------------------------------------- */
 /* --------------Utilitários-------------- */
 /* --------------------------------------- */
