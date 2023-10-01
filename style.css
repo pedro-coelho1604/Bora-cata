@@ -574,7 +574,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 763px) {
+@media screen and (max-width: 768px) {
     .header-nav {
         display: none;
     }
