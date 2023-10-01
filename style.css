@@ -81,6 +81,11 @@ header {
     background: rgb(255, 102, 0);
 }
 
+/* Menu Hamburguer */
+.men-ham {
+    display: none;
+}
+
 .icone-menu {
     display: none;
 }
@@ -396,6 +401,7 @@ footer {
     padding: 1rem 0 2rem 0;
 }
 
+
 /* --------------------------------------- */
 /* -------------RESPONSIVIDADE------------ */
 /* --------------------------------------- */
@@ -521,7 +527,15 @@ footer {
 
     .icone-menu {
         display: block;
-        width: 66px;
+        width: 35px;
+        height: 35px;
+        background: url('./assets/imagens/icone-menu-hamburguer.png') no-repeat;
+        background-size: 100%;
+    }
+
+    .icone-menu:hover {
+        background: url('./assets/imagens/icone-menu-hamburguer-preto.png') no-repeat;
+        background-size: 100%;
     }
 }
 
@@ -530,4 +544,9 @@ footer {
 /* --------------------------------------- */
 .mb-2 {
     margin-bottom: 2rem;
+}
+
+/* Sempre visivel */
+.sv {
+    display: block;
 }
