@@ -610,7 +610,20 @@ footer {
     margin-bottom: 2rem;
 }
 
-/* Sempre visivel */
-.sv {
-    display: block;
+/* Botões fora do header */
+.jogar {
+    text-decoration: none;
+    color: white;
+    background: rgb(255, 153, 0);
+    padding: .5rem .75rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+}
+
+.jogar:hover {
+    transition: .5s;
+    color: black;
+    background: rgb(255, 102, 0);
 }
